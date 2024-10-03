@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Contacto y Reservas | Solicita Información</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="destinos.html">Destinos</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+
+    <section class="form-section">
+        <h2>Contacto y Reservas</h2>
+        <p>¡Nos pondremos en contacto contigo lo antes posible!</p>
+
+        <form action="#" method="POST" class="contact-form">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <label for="nombre">Nombre <em>*</em></label>
+                <input type="text" required>
+
+                <label for="email">Email <em>*</em></label>
+                <input type="email" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" pattern="[0-9]{9}">
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de la estancia</legend>
+
+                <label for="fechas">Fechas de la estancia <em>*</em></label>
+                <input type="date" required><input type="date" required>
+
+                <label for="personas">Número de personas <em>*</em></label>
+                <select name="npersonas" required>
+                    <optgroup>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3-7</option>
+                        <option>7+</option>
+                    </optgroup>
+                </select>
+
+                <label for="edad">Edad de la persona más adulta</label>
+                <div class="radio-container">
+                    <label for="edad1">18-30</label>
+                    <input type="radio" name="edad" id="edad1" checked>
+                    <label for="edad2">31-65</label>
+                    <input type="radio" name="edad" id="edad2">
+                    <label for="edad3">65+</label>
+                    <input type="radio" name="edad" id="edad3">
+                </div>
+
+                <label for="msg">Mensaje <em>*</em></label>
+                <textarea id="msg" rows="4" required placeholder="Describe qué esperas de tu estancia"></textarea>
+            </fieldset>
+
+            <div class="checkbox-container">
+                <small>Acepto el tratamiento de mis datos según la <strong><a
+                        href="https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32016R0679" target="_blank">GDPR</a></strong></small>
+                <input type="checkbox" required>
+            </div>
+
+            <button id="botonEnviar" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

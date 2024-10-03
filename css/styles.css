@@ -1,0 +1,423 @@
+/*
+GENERAL
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343e48;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+nav a {
+    color: #686f77;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a.activo {
+    color: #ffffff;
+    border-bottom: 2px solid #f45702;
+}
+
+footer {
+    background-color: #343e48;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*
+CONTACTO
+*/
+
+.form-section {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #343e48;
+    margin-bottom: 20px;
+}
+
+.form-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    color: #343e48;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f45702;
+    outline: none;
+}
+
+#botonEnviar {
+    background-color: #f45702;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#botonEnviar:hover {
+    background-color: #ffffff;
+    color: #f45702;
+    border: 1px solid #f45702;
+}
+
+em {
+    color: red;
+    font-weight: bold;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.radio-container label {
+    font-weight: normal;
+}
+
+.checkbox-container {
+    text-align: center;
+}
+
+.checkbox-container label {
+    font-weight: lighter;
+}
+
+.contact-form fieldset {
+    border: 2px solid #f45702;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form fieldset legend {
+    font-size: 1.2rem;
+    color: #343e48;
+    font-weight: bold;
+    padding: 0 10px;
+    border: 2px solid #f45702;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.contact-form fieldset input,
+.contact-form fieldset select,
+.contact-form fieldset textarea {
+    margin-bottom: 15px;
+}
+
+/*
+DESTINOS
+*/
+
+.destinos-section {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.destinos-section h2 {
+    text-align: center;
+    color: #343e48;
+    margin-bottom: 30px;
+}
+
+.destino {
+    margin-bottom: 20px;
+}
+
+.destino h3 {
+    color: #f45702;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.destino p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+.destino-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destino small {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.destino h4 {
+    display: block;
+    text-align: center;
+}
+
+.tabla-destinos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-destinos th, .tabla-destinos td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-destinos th {
+    background-color: #f45702;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla-destinos tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+.tabla-destinos tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabla-destinos td {
+    color: #343e48;
+}
+
+/*
+FAQ
+*/
+
+.faq-section {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #343e48;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #f45702;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.faq-lista {
+    margin-left: 20px;
+    color: #666;
+    list-style-type: disc;
+}
+
+.faq-lista li {
+    margin-bottom: 10px;
+}
+
+/*
+INDEX
+*/
+
+.header-index {
+    background-image: url('../img/fondo-index.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header-contenido h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-contenido p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.boton-destinos {
+    background-color: #f45702;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-destinos:hover {
+    background-color: #ffffff;
+    color: #f45702;
+    border: 1px solid #f45702;
+}
+
+.intro-section {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.intro-section h2 {
+    color: #343e48;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.feats-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.feat {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.feat h3 {
+    color: #f45702;
+    margin-bottom: 15px;
+}
+
+.feat p {
+    color: #666;
+}
+
+.agencias-section {
+    background-color: #f4f4f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.agencias-section h2 {
+    color: #343e48;
+    margin-bottom: 30px;
+}
+
+.agencia {
+    margin-bottom: 20px;
+}
+
+.agencia h3 {
+    color: #f45702;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.agencia p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.mapa {
+    width: 80%;
+    height: 300px;
+    border: 0;
+}

@@ -465,6 +465,16 @@ MEDIA QUERIES
     .radio-container label {
         margin-bottom: 10px;
     }
+
+    .checkbox-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .checkbox-container label {
+        display: inline-block;
+        font-weight: normal;
+    }
 }
 
 /* Teléfonos (<480px) */
@@ -514,5 +524,15 @@ MEDIA QUERIES
 
     .radio-container label {
         margin-bottom: 5px;
+    }
+
+    .checkbox-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .checkbox-container label {
+        display: inline-block;
+        font-weight: normal;
     }
 }

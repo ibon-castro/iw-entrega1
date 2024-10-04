@@ -421,3 +421,78 @@ INDEX
     height: 300px;
     border: 0;
 }
+
+/*
+MEDIA QUERIES
+*/
+
+/* Tablets (<768px) */
+@media (max-width: 768px) {
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .form-section, .destinos-section, .faq-section, .intro-section, .feats-section {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .feat {
+        width: 45%;
+    }
+
+    .tabla-destinos th, .tabla-destinos td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .header-contenido h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-contenido p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Teléfonos (<480px) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    .form-section, .destinos-section, .faq-section, .intro-section, .feats-section {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .feat {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tabla-destinos th, .tabla-destinos td {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    .header-contenido h1 {
+        font-size: 2rem;
+    }
+
+    .header-contenido p {
+        font-size: 1rem;
+    }
+
+    .boton-destinos {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
